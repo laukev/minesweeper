@@ -1,0 +1,124 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  padding: 16px;
+  font-family: 'Darker Grotesque', sans-serif;
+  line-height: 1;
+  color: rgb(0, 255, 0);
+  background-color: rgb(0, 0, 0); /* Retro green background */
+}
+
+/* Game container styling */
+.game-container {
+  width: 484px;
+}
+
+/* Title styling */
+h1 {
+  font-size: 40px;
+  color: #f8d7da; /* Retro red for the title */
+}
+
+/* Score display styling */
+.score {
+  display: flex;
+  justify-content: space-between;
+  font-size: 32px;
+}
+
+/* Game board styling */
+.game-board {
+  border: 2px solid rgb(0, 0, 255); /* Dark border */
+  position: relative;
+}
+
+/* Grid styling for cells */
+.grid {
+  height: 484px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Individual cell styling */
+.cell {
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  outline: 1px solid #28a745; /* green outline */
+}
+
+/* Styling for cells with bomb image */
+.cell-bomb {
+  background-image: url('./images/bomb.png');
+  background-size: contain;
+  background-position: center;
+}
+
+/* End game screen styling */
+.end-game-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(241, 117, 78, 0.7);
+
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 16px;
+}
+
+/* Styling for win screen */
+.win {
+  background-color: rgba(0, 0, 255, 0.7);
+}
+
+/* End game text styling */
+.end-game-text {
+  font-size: 48px;
+  font-family: 'Press Start 2P', cursive;
+  text-transform: uppercase;
+  color: #28a745; /* Retro green for the end game text */
+}
+
+/* Styling for buttons */
+.btn {
+  font-size: 24px;
+  font-family: 'Darker Grotesque', sans-serif;
+  padding: 4px 20px 8px 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  border: 2px solid #17a2b8; /* Retro blue border */
+  border: 2px solid rgb(0, 0, 0); /* Black background */
+  color: #fff; /* White text */
+}
+
+/* Button hover effect */
+.btn:hover {
+  background-color: rgb(203, 224, 221)
+}
+
+/* Hidden class to initially hide end game screen */
+.hidden {
+  display: none;
+}
+
+/* Styling for clicked cells */
+.cell-clicked {
+  background-color: rgb(255, 51, 51);;
+  cursor: not-allowed;
+}
+
+/* Win screen styling */
+.win {
+  background-color: rgba(78, 241, 187, 0.7);
+}
